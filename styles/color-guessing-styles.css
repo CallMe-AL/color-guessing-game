@@ -13,13 +13,6 @@ body {
 
 /* Header stylings */
 
-.counter {
-    font-weight: 700;
-    /* text-align: left; */
-    float: left;
-    color: white;
-}
-
 header {
     color: white;
     background-color: rgb(29, 178, 184);
@@ -109,4 +102,10 @@ h1 {
     -webkit-transition: background .3s;
 	-moz-transition: background .3s;
 	-o-transition: background .3s;
+}
+
+.counter {
+    font-weight: 700;
+    float: left;
+    color: white;
 }

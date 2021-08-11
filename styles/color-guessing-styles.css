@@ -87,13 +87,12 @@ h1 {
     /* display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
     grid-gap: 20px; */
-    justify-content: center;
     max-width: 600px;
 }
 
 .square {
     float: left;
-    margin: 10px;
+    margin: 1.5%;
     width: 30%;
     /* height: 180px; */
     padding-bottom: 30%;

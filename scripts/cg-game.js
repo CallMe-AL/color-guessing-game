@@ -25,7 +25,8 @@ colorsBtn.onclick = function() {
 function reset() {
     counter.textContent = `Wins: ${wins} Total Guesses: ${totalGuesses}`;
     header.style.backgroundColor = 'rgb(29, 178, 184)';
-    gameMessage.textContent = '';   
+    gameMessage.textContent = '';  
+    colorsBtn.textContent = 'NEW COLORS'; 
     winningColor = generateColor();     
     rgb.textContent = winningColor;
     squareEvent(winningColor);
@@ -55,13 +56,14 @@ function btnChoice() {
 function squareEvent(color) {
     for (let i = 0; i < squares.length; i++){
         squares[i].onclick = function() {             
-            if (gameMessage.textContent == 'Nice! Play again?') {
+            if (gameMessage.textContent == 'Nice!') {
                 return;
             } else if (this.style.backgroundColor == color) {
                 changeColors(color);
                 wins++;
                 totalGuesses++;
-                gameMessage.textContent = 'Nice! Play again?';
+                gameMessage.textContent = 'Nice!';
+                colorsBtn.textContent = 'PLAY AGAIN';
             } else {
                 gameMessage.textContent = 'Nope!';
                 this.style.backgroundColor = 'rgb(34, 32, 32)';

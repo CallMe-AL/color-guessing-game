@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Color guessing game</title>
+        <link rel="stylesheet" type="text/css" href="styles/color-guessing-styles.css"> 
+        <link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+        <body>
+            <header>
+                <div class="counter"></div>
+                <h1>The Great <span id="rgb-update">RGB</span> 
+                    Guessing Game</h1>
+            </header>
+
+            <div class="game-settings">
+                <div class="gs-container">
+                    <button class="colorsButton">NEW COLORS</button>
+                    <div class="game-message"></div>
+                    <button class="mode">EASY</button>
+                    <button class="mode selected">HARD</button>
+                </div>
+            </div>
+
+            <div id="game-section">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+
+            <script type="text/javascript" src="scripts/cg-game.js"></script>
+        </body>
+    </head>
+</html>

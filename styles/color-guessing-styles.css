@@ -1,0 +1,108 @@
+* {
+    border: 0px solid red;
+}
+
+/* Body stylings */
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(34, 32, 32);
+    font-family: "Raleway", sans-serif;
+}
+
+/* Header stylings */
+
+.counter {
+    font-weight: 700;
+    text-align: left;
+}
+
+header {
+    color: white;
+    background-color: rgb(29, 178, 184);
+    text-align: center;    
+}
+
+h1 {
+    margin: 0px;
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+
+#rgb-update {
+    display: block;
+    font-size: 2em;
+    word-wrap: break-word;
+}
+
+/* Game settings stylings */
+
+.game-settings {
+    color: rgb(29, 178, 184);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    /* For a more spacious look, choose below */
+}
+
+.gs-container {
+    flex: 1;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+.gs-container button {
+    outline: none;
+    color:rgb(29, 178, 184);
+    background-color: white;
+    font-size: 1em;
+    letter-spacing: 1px;
+    padding: 10px 4px 10px 4px;
+}
+
+.gs-container .mode {
+    margin-right: 4px;
+}
+
+.gs-container .selected {
+    background-color: rgb(29, 178, 184);
+    color: white;
+}
+
+.gs-container button:hover {
+    color: white;
+    background-color:rgb(29, 178, 184);
+    transition: .3s;
+}
+
+.game-message {
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    line-height: 39.2px;
+    font-weight: 700;
+}
+
+/* Game section */
+
+#game-section {
+    margin: 0 auto;
+    padding-top: 25px;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-gap: 20px; */
+    justify-content: center;
+    max-width: 600px;
+}
+
+.square {
+    float: left;
+    margin: 10px;
+    width: 180px;
+    height: 180px;
+    border-radius: 20px;
+    background-color: purple;
+    transition: background .3s;
+}

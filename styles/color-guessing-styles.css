@@ -15,7 +15,9 @@ body {
 
 .counter {
     font-weight: 700;
-    text-align: left;
+    /* text-align: left; */
+    float: left;
+    color: white;
 }
 
 header {
@@ -43,7 +45,6 @@ h1 {
     background-color: white;
     display: flex;
     justify-content: center;
-    /* For a more spacious look, choose below */
 }
 
 .gs-container {
